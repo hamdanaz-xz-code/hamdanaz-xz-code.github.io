@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE WEBSITE | CODINGNEPAL</title>
+    <!--Linking Font Awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- linking Swipper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="coffee.css">
+</head>
+<body>
+    <!--Header / navigation bar-->
+    <header>
+        <nav class="navbar section-content" >
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Coffee</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+
+        </nav>
+    </header>
+    <main>
+        <!--hero section-->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="titile">Best Coffee</h2>
+                    <h3 class="subtitle">Make your day great with our special coffee!</h3>
+                    <p class="description">Welcome to our coffee paradise, where 
+                        every bean tells a story and every cup sparks joy.
+                    </p>
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Order Now</a>
+                        <a href="#" class="button order-now">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="data:image/jpeg;base64,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" alt="hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!--  About section  -->
+        <section class="about-section" id="about">
+            <div class="section-content">
+              <div class="about-image-wrapper">
+                <img src="images/about-image.jpg" alt="About"
+                class="about-image">
+              </div>
+            <div class="about-details">
+                <h2 class="section-title">About Us</h2>
+                <p class="text">At Coffee House in Berndorf, Germany, we pride
+                ourselves on being a go-to destination for coffee lovers and 
+                conversation seekers alike. We're dedicated to proving an 
+                exceptional coffee experience in a cozy and inviting atmosphere,
+                where guestss can relax, unwind, and enjoy their time in comfort.
+                </p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link-list"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link-list"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link-list"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+
+            </div> 
+        </section>
+
+        <!--  Menu section  -->
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Our menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="" alt="Hot Beverages" class="menu-image">
+                        <h3 class="name">Hot Beverages</h3>
+                        <p class="text">Wide range of Steaming hot coffe to make you fresh and light.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="" alt="Cold Beverages" class="menu-image">
+                        <h3 class="name">Cold Beverages</h3>
+                        <p class="text">Creamy and frothy cold coffe to make you cool.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="" alt="Refreshment" class="menu-image">
+                        <h3 class="name">Refreshment</h3>
+                        <p class="text">Fruit and icy refreshing drink to make feel refresh.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="" alt="Special Combos" class="menu-image">
+                        <h3 class="name">Special Combos</h3>
+                        <p class="text">Your favourite eating and drinking combanation.</p>
+                    </li>\
+                    <li class="menu-item">
+                        <img src="" alt="Dessert" class="menu-image">
+                        <h3 class="name">Dessert</h3>
+                        <p class="text">Satiate your palate and take you on a culinary treat.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="" alt="Burger & French Fries" class="menu-image">
+                        <h3 class="name">Burger & French fries</h3>
+                        <p class="text">Quick bites to satisfy your small size hunger.</p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Testimonial section  -->
+        <section class="testimonial-section" id="testimonials">
+            <h2 class="section-title">Testimonial</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="image" alt="User" class="user-img">
+                                <h3 class="name">Sara Johnson</h3>
+                                <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will 
+                                    order again!"
+                                </i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="image" alt="User" class="user-img">
+                                <h3 class="name">Sara Johnson</h3>
+                                <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will 
+                                    order again!"
+                                </i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="image" alt="User" class="user-img">
+                                <h3 class="name">Sara Johnson</h3>
+                                <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will 
+                                    order again!"
+                                </i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="image" alt="User" class="user-img">
+                                <h3 class="name">James Wilson</h3>
+                                <i class="feedback">"Great espresso blend! Smooth and bold
+                                    flavor. Fast shipping too!"
+                                </i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="image" alt="User" class="user-img">
+                                <h3 class="name">Micheal Brown</h3>
+                                <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic, Quick shipping!"
+                                </i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="image" alt="User" class="user-img">
+                                <h3 class="name">Emily Harris</h3>
+                                <i class="feedback">"Excellent quality! Fresh beans and quick delivery.
+                                    Highly recommend."
+                                </i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="image" alt="User" class="user-img">
+                                <h3 class="name">Anthony Thompson</h3>
+                                <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived promptly."
+                                </i>
+                            </li>
+                        </ul>
+                        <div class="swiper-slide-button swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  Gallery section  -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+             <ul class="gallery-list">
+                <li class="gallery-item">
+                  <img src="images/gallery-1.jpg" alt="Gallery"
+                  class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                  <img src="images/gallery-1.jpg" alt="Gallery"
+                  class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                  <img src="images/gallery-1.jpg" alt="Gallery"
+                  class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                  <img src="images/gallery-1.jpg" alt="Gallery"
+                  class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                  <img src="images/gallery-1.jpg" alt="Gallery"
+                  class="gallery-image">
+                </li>
+                <li class="gallery-item">
+                  <img src="images/gallery-1.jpg" alt="Gallery"
+                  class="gallery-image">
+                </li>
+
+             </ul>
+            </div>
+        </section>
+
+        <!--  Contact section  -->
+        <section class="contact-section" id="contact">
+           <h2 class="section-title">Contact Us</h2>
+           <div class="section-content">
+            <ul class="contact-info-list">
+              <li class="contact-info">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+              </li>
+              <li class="contact-info">
+               <i class="fa-regular fa-envelope"></i>
+               <p>info@coffeeshopwebsite.com</p>
+              </li>
+              <li class="contact-info">
+               <i class="fa-solid fa-phone"></i>
+               <p>(123) 456-78909</p>
+              </li>
+              <li class="contact-info">
+               <i class="fa-regular fa-clock"></i>
+               <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+              </li>
+              <li class="contact-info">
+               <i class="fa-solid fa-location-crosshairs"></i>
+               <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+              </li>
+              <li class="contact-info">
+               <i class="fa-regular fa-check"></i>
+               <p>Sunday: Closed</p>
+              </li>
+            </ul>
+
+            <form action="#" class="contact-for">
+                <input type="text" placeholder="Your name" class="form-input" required>
+                <input type="email" placeholder="Your email" class="form-input" required>
+                <textarea placeholder="Your message" class="form-input" required></textarea>
+                <button class="submit-button"></button>
+                
+            </form>
+           </div>
+        </section>
+
+        <!-- footer section -->
+        
+        <footer class="footer-section">
+          <div class="section-content">
+           <p class="copyright-text">© 2024 Coffee Shop</p>
+
+           <div class="social-link-list">
+              <a href="#" class="social-link"><i class="fa-brands
+               fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands
+               fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands
+               fa-x-twitter"></i></a>
+           </div>
+
+           <p class="policy-text">
+              <a href="#" class="policy-link">Privacy policy</a>
+              <span class="separator">•</span>
+              <a href="#" class="policy-link">Refund policy</a>
+           </p>
+           </div>
+        </footer>
+
+    </main>
+
+    <!--  Linking Swipper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!--  Linking custom script -->
+    <script src="coffee.js"></script>
+   
+    
+</body>
+</html>
